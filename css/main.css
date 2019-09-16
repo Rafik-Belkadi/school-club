@@ -16,11 +16,19 @@ body {
     font-family: 'Montserrat';
 }
 
-/* NavBar design */
+/* TABLE OF CONTENTS
+    I - Navbar design
+
+*/
+
+
+
+/* I - NavBar design */
+
 .nav-background {
     position: relative;
     width: 100%;
-    height: 150px;
+    height: 180px;
     background-color: var(--home-primary-color);
     color: var(--main-bg-color);
     
@@ -54,7 +62,7 @@ ul {
     justify-content: space-evenly;
 }
 
-.container > li {
+.link {
     list-style-type: none;
     text-align: center;
     line-height: 18px;
@@ -63,31 +71,50 @@ ul {
     padding: 10px;
     border-radius: 1000px;
     color: var(--main-bg-color);
+    transition: 0.3s;
 }
-.container > li:hover {
+.link:hover {     
     background: #FFFFFF;
+    color: var(--home-primary-color);
+    transition: 0.3s;
 }
+
+.link > a {
+    text-decoration: none;
+    color: var(--main-bg-color);
+}
+.link > a:hover {
+    
+    color: var(--home-primary-color);
+}
+
 .selected {
     border: 3px solid var(--main-bg-color);
     border-radius: 1000px
 }
-.container > li > a {
-    text-decoration: none;
-    color: var(--main-bg-color);
-}
-.container>li>a:hover {
-    color: var(--home-primary-color);
-}
+
 #logo {
     font-size: 56px;
     font-weight: bold;
-    margin: 0px 100px 0 0;
+    margin: -10px 100px 0 0;
 }
+
+#hub {
+     border-radius: 10px;
+     background: #FFFFFF;
+     color: var(--home-primary-color);
+     font-weight: bold;
+     text-align: center;
+     padding: 1px;
+}
+
 #login {
     border-radius: 25px;
     background: #FFFFFF;
     color: var(--home-primary-color);
     font-weight: bold;
+    text-align: center;
+    
 }
 #login > a {
     color: var(--home-primary-color);

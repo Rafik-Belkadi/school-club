@@ -12,13 +12,12 @@ body {
     color: var(--title-primary-color);
     padding: 0;
     margin: 0;
-    margin-top: -20px;
     font-family: 'Montserrat';
 }
 
 /* TABLE OF CONTENTS
     I - Navbar design
-
+    II - Home page main content
 */
 
 
@@ -38,7 +37,7 @@ body {
     width: 200%;
     height: 70px;
     bottom: 0px;
-    background: url('../assets/wave.png');
+    background: url('http://front-end-noobs.com/jecko/img/wave-top.png');
     background-repeat: repeat-x;
     background-size: 50% 75px;
     transform-origin: center bottom;
@@ -55,7 +54,7 @@ ul {
     padding: 0;
 }
 .container {
-    padding: 50px 0;
+    padding: 30px 0;
     margin: 0;
     display: flex;
     width: 100%;
@@ -121,6 +120,54 @@ ul {
 }
 #login > a:hover {
     
+}
+
+/* II- Home PAGE */
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.welcome-text {
+    margin-top: 200px;
+}
+.welcome-text > h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+.welcome-text > h6 {
+    font-size: 18px;
+    margin: 10px 0 30px 0;
+}
+.welcome-text > a {
+     border-radius: 25px;
+     background: var(--home-primary-color);
+     color: var(--main-bg-color);
+     font-weight: bold;
+     text-align: center;
+     text-decoration: none;
+     padding: 13px 40px;
+     
+}
+
+.welcome-image > img {
+    width: 700px;
+    height: 600px;
+    flex: 3
+}
+
+.social {
+    margin-top: 100px;
+}
+.social > a {
+    line-height: 50px;
+    font-size: 20px;
+    color: #707070;
+}
+.social > a:hover {
+    color: var(--home-primary-color)
 }
 
 
